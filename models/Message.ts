@@ -5,6 +5,8 @@ export interface MessageData {
   userId: number
   timeStamp: string
   file?: undefined
+  username: string
+  profile_pic?: string
 }
 
 export interface Message extends MessageData {

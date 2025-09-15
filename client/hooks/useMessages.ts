@@ -30,7 +30,7 @@ export function useGetMessageByChatId(id: number) {
     queryKey: ['chatById', id],
     queryFn: async () => {
       const token = await getAccessTokenSilently()
-      getChatById(token, id)
+      return getChatById(token, id)
     },
     enabled: !!user,
   })
@@ -39,13 +39,13 @@ export function useGetMessageByChatId(id: number) {
     queryKey: ['messageByChatId', id],
     queryFn: async () => {
       const token = await getAccessTokenSilently()
-      getMessageByChatId({ token, id })
+      return getMessageByChatId({ token, id })
     },
     enabled: !!user,
   })
 
   return {
     chatById: query1,
-    messAgeByChatId: query2,
+    messageByChatId: query2,
   }
 }
