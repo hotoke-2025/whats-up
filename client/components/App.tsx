@@ -1,7 +1,8 @@
 import { Theme } from '@radix-ui/themes'
 import Message from './Message'
 import Nav from './Nav'
-import "@radix-ui/themes/styles.css";
+import '@radix-ui/themes/styles.css'
+import { Chat } from './Chat'
 
 function App() {
   return (
@@ -11,8 +12,9 @@ function App() {
           <h3>Nav</h3>
         </h1>
         <Theme>
-        <Nav />
-        <Message />
+          <Nav />
+          <Chat />
+          <Message />
         </Theme>
       </div>
     </>

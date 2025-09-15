@@ -16,6 +16,7 @@ export async function getMessagesByChatID(chatId: number) {
         'users.user_name',
         'users.profile_pic',
       )
+    console.log(result)
     return result
   } catch (err) {
     console.log(err)
