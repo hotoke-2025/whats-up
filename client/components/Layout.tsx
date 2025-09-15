@@ -4,7 +4,7 @@ export default function Layout() {
   return (
     <>
       <header>
-        <h1>Fullstack Boilerplate - with Fruits!</h1>
+        <img src='/images/rect4.webp' alt='whats-up-logo'/>
       </header>
       <main>
         <Outlet />
